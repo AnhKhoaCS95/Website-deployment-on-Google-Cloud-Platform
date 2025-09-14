@@ -1,6 +1,6 @@
 🌐 Secure Dynamic Website Deployment on Google Cloud Platform
 
-![Image](https://github.com/user-attachments/assets/5bd4c2d0-4a53-45a5-8f40-55a694b8f6f2)
+![original-9ab75acd5f0b58a3a943efc4d962cb35](https://github.com/user-attachments/assets/4a46f005-35e7-4186-8f41-5da8e89472a4)
 
 📖 Overview
 
