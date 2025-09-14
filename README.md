@@ -69,8 +69,9 @@ The system also includes a **dedicated admin portal** to manage products, with *
 
 ---
 
-## 🗂 System Architecture
+## 📑 System Architecture
 
+```mermaid
 flowchart LR
     A[User] --> B[Custom Domain (Freenom) + SSL]
     B --> C[Nginx Web Server on GCP VM]
@@ -81,6 +82,7 @@ flowchart LR
     C --> F[Suricata IDS for Intrusion Detection]
     G[Crontab Automation] --> E
     G --> D
+
 
 💻 Tech Stack
 Component	Technology
