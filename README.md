@@ -1,5 +1,7 @@
 🚀 Project Overview
 
+![Image](https://github.com/user-attachments/assets/8cc375cc-e53e-419c-9519-c711fdf57c93)
+
 This project demonstrates the deployment and management of a secure dynamic website on Google Cloud Platform (GCP) with robust monitoring and automation.
 
 Key Features
@@ -49,3 +51,6 @@ Enhanced security with IDS (Suricata) and HTTPS encryption.
 Streamlined operations with automated backups and reduced manual intervention.
 
 Built a scalable cloud architecture ready for production use.
+
+Demo:
+https://www.youtube.com/playlist?list=PLFb35DC5uB-r2ZV7YCIdYs_uF-aEAkNRo
