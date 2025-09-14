@@ -1,18 +1,16 @@
 🌐 Secure Dynamic Website Deployment on Google Cloud Platform
 
-![original-9ab75acd5f0b58a3a943efc4d962cb35](https://github.com/user-attachments/assets/4a46f005-35e7-4186-8f41-5da8e89472a4)
-
 📖 Overview
 
 This project demonstrates how to deploy, secure, and automate a dynamic web application using Google Cloud Platform (GCP) services.
 It covers VM provisioning, web hosting with Nginx, intrusion detection, automated backups, cloud database integration, and secure domain management with SSL.
 
-The system also includes a dedicated admin portal to manage products, featuring domain and subdomain configurations for separation between the public-facing website and the admin panel.
+The system also includes a dedicated admin portal to manage products, featuring domain and subdomain configurations for separating the public-facing website and the admin panel.
 
 🛠 Features
 1. Google Cloud Platform Infrastructure
 
-Created and configured Virtual Machine instances using Google Compute Engine.
+Created and configured Virtual Machine (VM) instances using Google Compute Engine.
 
 Managed VPC networking, firewall rules, and DNS configuration for secure traffic flow.
 
@@ -30,9 +28,9 @@ Monitor network traffic.
 
 Detect port scanning (e.g., Nmap).
 
-Detect suspicious activities such as DoS or packet floods.
+Identify suspicious activities such as DoS attacks or packet floods.
 
-Enhanced system security and visibility by logging and alerting on intrusion attempts.
+Enhanced system security and visibility by logging and alerting intrusion attempts.
 
 4. Automated Backups with Crontab
 
@@ -56,7 +54,7 @@ Secure and scalable data storage.
 
 6. Domain & SSL Configuration
 
-Registered a free domain from Freenom.
+Registered a free domain using Freenom.
 
 Configured custom domain and subdomain:
 
@@ -108,7 +106,11 @@ Secure and scalable architecture with SSL, Suricata IDS, and automated backups.
 
 Dynamic website connected to managed MySQL database (Cloud SQL).
 
-Separation of concerns with public site and admin portal on different domains/subdomains.
+Clear separation of concerns:
+
+Public site → Domain
+
+Admin panel → Subdomain
 
 Reduced operational workload via Crontab automation.
 
@@ -130,12 +132,13 @@ Suricata IDS for intrusion detection.
 
 Crontab automation for database and file backups.
 
-Google Cloud SQL (MySQL) for data management.
+Google Cloud SQL (MySQL) for backend data management.
 
 Custom domain and subdomain management with SSL encryption.
 
-AdminJS portal for managing products efficiently.
+AdminJS portal for efficient product management.
 
+🎥 Demo
 
-Demo:
-https://www.youtube.com/playlist?list=PLFb35DC5uB-r2ZV7YCIdYs_uF-aEAkNRo
+Watch the project demo here:
+YouTube Playlist
