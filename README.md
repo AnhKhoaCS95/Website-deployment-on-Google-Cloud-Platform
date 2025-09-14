@@ -28,9 +28,9 @@ Databases: Cloud SQL, Firestore
 
 Monitoring & Security: Suricata, Firewall Rules
 
-Automation: Crontab
+Backup: Crontab
 
-Domain & SSL: Google Domains / Let's Encrypt
+Domain & SSL: buy or get it free on some free domain websites and they also provide free ssl 
 
 Architecture
 flowchart LR
