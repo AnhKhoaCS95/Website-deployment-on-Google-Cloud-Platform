@@ -74,7 +74,7 @@ The system also includes a **dedicated admin portal** to manage products, with *
 
 ```mermaid
 flowchart LR
-    A[User] --> B["Custom Domain (Freenom) + SSL"]
+    A[User] --> B["Custom Domain (freedomain.one) + SSL"]
     B --> C["Nginx Web Server on GCP VM"]
     C --> D["Public Website"]
     C --> I["Admin Portal - Subdomain (AdminJS)"]
