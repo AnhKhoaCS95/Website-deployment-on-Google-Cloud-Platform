@@ -69,7 +69,6 @@ The system also includes a **dedicated admin portal** to manage products, with *
 
 ---
 
-## 📑 System Architecture
 
 ## 📑 System Architecture
 
