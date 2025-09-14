@@ -31,6 +31,7 @@ Monitoring & Security: Suricata, Firewall Rules
 Backup: Crontab
 
 Domain & SSL: buy or get it free on some free domain websites and they also provide free ssl 
+free domain: https://freedomain.one/index.jsp
 
 Architecture
 flowchart LR
