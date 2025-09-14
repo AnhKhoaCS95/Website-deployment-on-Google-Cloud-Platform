@@ -52,7 +52,7 @@ The system also includes a **dedicated admin portal** to manage products, with *
 ---
 
 ### **6. Domain & SSL Configuration**
-- Registered a **free domain** via **Freenom**.  
+- Registered a **free domain** in https://freedomain.one/. 
 - Configured **domain** and **subdomain**:  
   - **Domain** → Public-facing website.  
   - **Subdomain** → Admin portal.  
