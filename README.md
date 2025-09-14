@@ -10,7 +10,7 @@ Website Deployment: Hosted a dynamic website using Nginx as the web server.
 
 Secure Deployment: Configured a custom domain with SSL/TLS certificates for secure access (HTTPS).
 
-Cloud Databases Integration: Connected and managed cloud-hosted databases such as Cloud SQL and Firestore.
+Set up Google Cloud SQL with MySQL for secure, scalable, and managed database services.
 
 Cloud Networking & DNS Management: Implemented provisioning, DNS configuration, and network setup for reliable connectivity.
 
