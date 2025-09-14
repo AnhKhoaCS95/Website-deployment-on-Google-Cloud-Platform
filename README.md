@@ -1,82 +1,76 @@
-🌐 Secure Dynamic Website Deployment on Google Cloud Platform
+# 🌐 Secure Dynamic Website Deployment on Google Cloud Platform
 
-📖 Overview
+![Deployment Architecture](https://github.com/user-attachments/assets/4a46f005-35e7-4186-8f41-5da8e89472a4)
 
-This project demonstrates how to deploy, secure, and automate a dynamic web application using Google Cloud Platform (GCP) services.
-It covers VM provisioning, web hosting with Nginx, intrusion detection, automated backups, cloud database integration, and secure domain management with SSL.
+---
 
-The system also includes a dedicated admin portal to manage products, featuring domain and subdomain configurations for separating the public-facing website and the admin panel.
+## 📖 Overview
+This project demonstrates how to **deploy, secure, and automate** a dynamic web application using **Google Cloud Platform (GCP)** services.  
+It covers **VM provisioning**, **web hosting with Nginx**, **intrusion detection**, **automated backups**, **cloud database integration**, and **secure domain management with SSL**.
 
-🛠 Features
-1. Google Cloud Platform Infrastructure
+The system also includes a **dedicated admin portal** to manage products, with **separate domain and subdomain** for the public-facing website and admin panel.
 
-Created and configured Virtual Machine (VM) instances using Google Compute Engine.
+---
 
-Managed VPC networking, firewall rules, and DNS configuration for secure traffic flow.
+## 🛠 Features
 
-2. Web Hosting with Nginx
+### **1. Google Cloud Platform Infrastructure**
+- Provisioned and configured **Virtual Machines (VMs)** using **Google Compute Engine**.  
+- Managed **VPC networking**, **firewall rules**, and **DNS configuration** to ensure secure connectivity.
 
-Installed and configured Nginx on the VM to host the dynamic website.
+---
 
-Configured reverse proxy rules to support domain and subdomain hosting.
+### **2. Web Hosting with Nginx**
+- Installed and configured **Nginx** to serve the dynamic website.  
+- Configured **reverse proxy rules** to support hosting on both **domain** and **subdomain**.
 
-3. Intrusion Detection System (IDS) with Suricata
+---
 
-Installed Suricata IDS on the VM to:
+### **3. Intrusion Detection System (IDS) with Suricata**
+- Installed **Suricata IDS** on the VM to:
+  - Monitor network traffic.  
+  - Detect **port scanning** (e.g., Nmap).  
+  - Identify suspicious activities such as **DoS attacks** or **packet floods**.  
+- Improved **security visibility** with real-time logs and alerts.
 
-Monitor network traffic.
+---
 
-Detect port scanning (e.g., Nmap).
+### **4. Automated Backups with Crontab**
+- Configured **Crontab scripts** to automatically:
+  - Back up **website files**.  
+  - Schedule **regular database backups** from **Google Cloud SQL (MySQL)**.  
+- Reduced **manual workload** and improved **data reliability**.
 
-Identify suspicious activities such as DoS attacks or packet floods.
+---
 
-Enhanced system security and visibility by logging and alerting intrusion attempts.
+### **5. Google Cloud SQL (MySQL)**
+- Deployed **Google Cloud SQL (MySQL)** as the backend database.  
+- Connected both the **public website** and **admin portal** to Cloud SQL for:
+  - Product management.  
+  - Scalable and secure data storage.
 
-4. Automated Backups with Crontab
+---
 
-Implemented automated backup scripts using Crontab to:
+### **6. Domain & SSL Configuration**
+- Registered a **free domain** via **Freenom**.  
+- Configured **domain** and **subdomain**:  
+  - **Domain** → Public-facing website.  
+  - **Subdomain** → Admin portal.  
+- Secured both using **SSL/TLS certificates** from **Let's Encrypt** for **HTTPS** encryption.
 
-Back up website files.
+---
 
-Schedule regular database backups from Google Cloud SQL (MySQL).
+### **7. Admin Portal (AdminJS)**
+- Built an **AdminJS dashboard** for product management.  
+- **Key features**:
+  - Add new products.  
+  - Delete products.  
+- Accessible only via a **secure subdomain**.
 
-Reduce manual workload and improve data reliability.
+---
 
-5. Google Cloud SQL (MySQL)
-
-Set up Google Cloud SQL with MySQL as the backend database.
-
-Connected the dynamic website and admin portal to Cloud SQL for:
-
-Product management.
-
-Secure and scalable data storage.
-
-6. Domain & SSL Configuration
-
-Registered a free domain using Freenom.
-
-Configured custom domain and subdomain:
-
-Domain → Public-facing website.
-
-Subdomain → Admin portal.
-
-Secured both with SSL/TLS certificates using Let's Encrypt, ensuring encrypted HTTPS connections.
-
-7. Admin Portal (AdminJS)
-
-Built an admin dashboard using AdminJS for managing products.
-
-Key functions:
-
-Add new products.
-
-Delete products.
-
-Accessible only through a secure subdomain.
-
-🗂 System Architecture
+## 🗂 System Architecture
+```mermaid
 flowchart LR
     A[User] --> B[Custom Domain (Freenom) + SSL]
     B --> C[Nginx Web Server on GCP VM]
@@ -87,7 +81,7 @@ flowchart LR
     C --> F[Suricata IDS for Intrusion Detection]
     G[Crontab Automation] --> E
     G --> D
-
+```
 💻 Tech Stack
 Component	Technology
 Cloud Platform	Google Cloud Platform (GCP)
@@ -100,27 +94,27 @@ Domain & SSL	Freenom, Let's Encrypt
 Admin Panel	AdminJS
 🔑 Highlights
 
-Fully cloud-native deployment on GCP.
+Fully cloud-native deployment built entirely on GCP.
 
-Secure and scalable architecture with SSL, Suricata IDS, and automated backups.
+Enhanced security with Suricata IDS and SSL encryption.
 
-Dynamic website connected to managed MySQL database (Cloud SQL).
+Automated backups for data safety and reduced operational overhead.
 
-Clear separation of concerns:
+Clear separation of services:
 
-Public site → Domain
+Public-facing website → Domain.
 
-Admin panel → Subdomain
+Admin portal → Subdomain.
 
-Reduced operational workload via Crontab automation.
+Scalable and production-ready infrastructure.
 
 🚀 Future Improvements
 
-Implement load balancing with Google Cloud Load Balancer.
+Implement Google Cloud Load Balancer for load balancing and redundancy.
 
-Add monitoring and alerting using Google Cloud Monitoring.
+Add Google Cloud Monitoring for real-time alerts and performance tracking.
 
-Improve admin panel with role-based access control (RBAC).
+Enhance AdminJS with role-based access control (RBAC) for improved security.
 
 📜 Summary
 
@@ -128,17 +122,18 @@ This project demonstrates deploying a secure, production-ready dynamic website w
 
 GCP VM hosting using Nginx.
 
-Suricata IDS for intrusion detection.
+Suricata IDS for real-time intrusion detection.
 
-Crontab automation for database and file backups.
+Crontab automation for regular database and file backups.
 
 Google Cloud SQL (MySQL) for backend data management.
 
-Custom domain and subdomain management with SSL encryption.
+Custom domain and subdomain with SSL encryption.
 
 AdminJS portal for efficient product management.
 
 🎥 Demo
 
-Watch the project demo here:
-YouTube Playlist
+![Image](https://github.com/user-attachments/assets/154d120d-4e75-4bc5-affb-ae5f78ca0fd4)
+
+https://www.youtube.com/playlist?list=PLFb35DC5uB-r2ZV7YCIdYs_uF-aEAkNRo
