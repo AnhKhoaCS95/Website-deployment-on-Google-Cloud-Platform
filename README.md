@@ -82,7 +82,7 @@ flowchart LR
     C --> F[Suricata IDS for Intrusion Detection]
     G[Crontab Automation] --> E
     G --> D
-
+```
 
 💻 Tech Stack
 Component	Technology
